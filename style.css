@@ -8,6 +8,7 @@
     --color-text: #444444;
     --color-white: #FFFFFF;
     --color-button-refresh: #111111;
+    --color-button-refresh-hover: #333333;
 }
 
 /* Estilos gerais */
@@ -183,4 +184,8 @@ ul {
 
 .button-refresh img {
     margin-right: 10px;
+}
+
+.button-refresh:hover {
+    background-color: var(--color-button-refresh-hover);
 }

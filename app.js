@@ -64,3 +64,10 @@ function limparCampo() {
     chute.value = "";
 }
 
+function limparLista() {
+    listaAmigos = [];
+    atualizarLista();
+    atualizarQuantidadeLista();
+    sorteioRealizado = false;
+    document.getElementById("resultado").innerHTML = "";
+}
