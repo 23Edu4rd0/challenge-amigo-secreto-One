@@ -55,6 +55,7 @@ function sortearAmigo() {
     sorteioRealizado = true
     atualizarLista();
     atualizarQuantidadeLista();
+    confettiDoCliff();    
     
 }
 
@@ -70,4 +71,12 @@ function limparLista() {
     atualizarQuantidadeLista();
     sorteioRealizado = false;
     document.getElementById("resultado").innerHTML = "";
+}
+
+function confettiDoCliff() {
+    confetti({
+        particleCount: 150, // Quantidade de confetes
+        spread: 180,        // Ângulo de dispersão
+        origin: { x: 0.5, y: 0.5 } // Centro da tela
+    });
 }
