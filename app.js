@@ -15,6 +15,12 @@ function atualizarQuantidadeLista() {
     } else {  // Habilita o botão de sortear
         document.getElementById("sortear").disabled = false;
         document.getElementById("tituloPrincipal").innerHTML = `Digite o nome dos seus amigos`;
+    } 
+    if (quantidadeElementosLista === 0) {
+        document.getElementById("limpar").disabled = true;
+    }
+    else {
+        document.getElementById("limpar").disabled = false;
     }
 }
 
