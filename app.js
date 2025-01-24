@@ -80,10 +80,33 @@ function limparLista() {
 }
 
 // função que dispara confetes
-function confettiDoCliff() {
-    confetti({
-        particleCount: 150, // Quantidade de confetes
-        spread: 180, // Espalhamento dos confetes (angulo)
-        origin: { x: 0.5, y: 0.5 } // Origem dos confetes
-    });
+
+function confeteDoCliff() {
+    // variavel que faz o tempo de duração do confete (15 segundos do futuro)
+    var end = Date.now() + (15 * 1000);
+    // variavel que seleciona as cores do confete
+    var colors = ['#4b69fd', '#ffffff'];
+
+    (function frame() {
+        //confete da esquerda
+        confetti({
+            particleCount: 200,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 },
+            colors: colors
+        });
+        // confete da direita
+        confetti({
+            particleCount: 2,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 },
+            colors: colors
+        });
+        // finaliza o processo quando o tempo atual for maior que o definido na variavel end
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
 }
