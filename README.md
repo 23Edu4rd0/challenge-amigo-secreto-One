@@ -32,6 +32,17 @@ Este projeto é uma aplicação interativa desenvolvida com JavaScript, HTML e C
    - Clique em "Sortear" para selecionar aleatoriamente um nome e celebrá-lo com confetes!
    - Repita o processo conforme necessário.
 
+## Imagens
+
+![Pagina Inical](assets/pagina-inicial.png)
+-
+![Lista formada](assets/lista.png)
+-
+![Lista apos usar limpar lista](assets/lista-limpa.png)
+-
+![Sorteio realizado](assets/sorteio.png)
+
+
 ## Requisitos
 
 - Qualquer navegador moderno que suporte JavaScript.
