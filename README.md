@@ -10,7 +10,7 @@ Este projeto é uma aplicação interativa desenvolvida com JavaScript, HTML e C
 - **Efeitos Visuais**: Uma animação de celebração é exibida ao concluir o sorteio.
 - **Atualização Dinâmica**: A lista é atualizada automaticamente conforme novos participantes são adicionados ou sorteados.
 
-## Tecnologias Utilizadas
+## Linguagens Utilizadas
 
 - **HTML**: Estrutura base da página.
 - **CSS**: Estilos personalizados e animações.
@@ -31,6 +31,17 @@ Este projeto é uma aplicação interativa desenvolvida com JavaScript, HTML e C
    - Veja o nome aparecer na lista de participantes.
    - Clique em "Sortear" para selecionar aleatoriamente um nome e celebrá-lo com confetes!
    - Repita o processo conforme necessário.
+
+## Imagens
+
+![Pagina Inical](assets/pagina-inicial.png)
+-
+![Lista formada](assets/lista.png)
+-
+![Lista apos usar limpar lista](assets/lista-limpa.png)
+-
+![Sorteio realizado](assets/sorteio.png)
+
 
 ## Requisitos
 
