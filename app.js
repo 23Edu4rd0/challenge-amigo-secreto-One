@@ -36,14 +36,16 @@ function atualizarLista() {
     // Atualiza a lista de amigos exibida na tela
     let lista = document.querySelector('#listaAmigos');
     lista.innerHTML = '';
-    // Loop que adciona amgigos a lista
+    // Loop que adiciona amigos à lista
     for (let i = 0; i < listaAmigos.length; i++) {
         let item = document.createElement('li');
         item.textContent = listaAmigos[i];
         lista.appendChild(item);
     }
     atualizarQuantidadeLista();
+    
 }
+
 // função para sortear amigos
 function sortearAmigo() {
     // Verificação se a lista esta vazia
@@ -60,7 +62,7 @@ function sortearAmigo() {
     sorteioRealizado = true
     atualizarLista();
     atualizarQuantidadeLista();
-    confettiDoCliff();
+    confeteDoCliff();
 
 }
 
@@ -76,7 +78,7 @@ function limparLista() {
     atualizarLista();
     atualizarQuantidadeLista();
     sorteioRealizado = false; // transforrma o sorteio em falso
-    document.getElementById("resultado").innerHTML = "";
+    document.getElementById("resultado").innerHTML = "Lista de amigos limpa";
 }
 
 // função que dispara confetes
@@ -90,7 +92,7 @@ function confeteDoCliff() {
     (function frame() {
         //confete da esquerda
         confetti({
-            particleCount: 200,
+            particleCount: 2,
             angle: 60,
             spread: 55,
             origin: { x: 0 },
