@@ -10,7 +10,7 @@ Este projeto é uma aplicação interativa desenvolvida com JavaScript, HTML e C
 - **Efeitos Visuais**: Uma animação de celebração é exibida ao concluir o sorteio.
 - **Atualização Dinâmica**: A lista é atualizada automaticamente conforme novos participantes são adicionados ou sorteados.
 
-## Tecnologias Utilizadas
+## Linguagens Utilizadas
 
 - **HTML**: Estrutura base da página.
 - **CSS**: Estilos personalizados e animações.
