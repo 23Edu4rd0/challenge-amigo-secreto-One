@@ -27,10 +27,17 @@ function atualizarQuantidadeLista() {
 // Função para adcionar amigos a lista
 function adicionarAmigo() {
     let nome = document.querySelector('#amigo').value;
+    // verifica se o campo esta vazio
     if (nome == "") {
         alert("Por Favor, Insira um nome")
         return;
+    } 
+    // verifica se amigo ja foi adcionado
+    if (listaAmigos.includes(nome)) {
+        alert("Esse amigo já foi adicionado")
+        return;
     }
+    // Adiciona o amigo a lista caso as condições sejam falsas 
     listaAmigos.push(nome);
     console.log(listaAmigos);
     atualizarLista();
