@@ -69,8 +69,11 @@ function sortearAmigo() {
     // Realizaçao do sorteio
     let numeroAleatorio = Math.floor(Math.random() * listaAmigos.length);
     let amigoSorteado = listaAmigos[numeroAleatorio];
+    // Seleciona o elemento onde o resultado será exibido
     let resultado = document.getElementById("resultado");
+     // Exibe o amigo sorteado na tela
     resultado.innerHTML = `O amigo sorteado foi: ${amigoSorteado}`;
+    // Remove o amigo sorteado da lista
     listaAmigos.splice(numeroAleatorio, 1);
     sorteioRealizado = true
     atualizarLista();
