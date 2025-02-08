@@ -1,3 +1,12 @@
+
+document.getElementById("amigo").addEventListener("keydown", apertarTeclaEnter);
+
+function apertarTeclaEnter(evento){
+    if (evento.key === "Enter") {
+        adicionarAmigo();
+    }
+}
+
 let listaAmigos = [];
 let quantidadeElementosLista = 0;
 let sorteioRealizado = false; // Variável para verificar se o sorteio foi feito
@@ -128,3 +137,4 @@ function confeteDoCliff() {
         }
     }());
 }
+
