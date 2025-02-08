@@ -4,11 +4,14 @@
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
+    --color-button-disable: #bdbebd;
     --color-text: #444444;
     --color-white: #FFFFFF;
+    --color-button-refresh: #111111;
+    --color-button-refresh-hover: #333333;
 }
 
-/* Estilos gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +33,7 @@ body {
     width: 100%;
 }
 
-/* Banner */
+
 .header-banner {
     flex: 40%;
     display: flex;
@@ -39,7 +42,7 @@ body {
     padding: 40px 0 0;
 }
 
-/* Seção de entrada */
+
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
@@ -52,7 +55,7 @@ body {
     width: 100%;
 }
 
-/* Títulos */
+
 .main-title {
     font-size: 48px;
     font-family: "Merriweather", serif;
@@ -70,7 +73,7 @@ body {
     text-align: center;
 }
 
-/* Contêineres de entrada e botão */
+
 .input-wrapper {
     display: flex;
     justify-content: center;
@@ -92,7 +95,7 @@ body {
     justify-content: center;
 }
 
-/* Estilos de entrada de texto */
+
 .input-title {
     flex: 1;
     padding: 10px 15px;
@@ -104,7 +107,23 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos de botão */
+/*  Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+/* botões */
 button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
@@ -125,38 +144,52 @@ button {
     background-color: #a1a1a1;
 }
 
-/* Listas */
-ul {
-    list-style-type: none;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    margin: 20px 0;
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Espaço entre os botões */
 }
 
-.result-list {
-    margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Botão de sortear título */
 .button-draw {
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 10px 40px;
+    padding: 10px 20px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-draw:disabled {
+    background-color: var(--color-button-disable);
+    color: var(--color-text);
+    cursor: not-allowed;
+}
+
+.button-refresh {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--color-white);
+    background-color: var(--color-button-refresh);
+    font-size: 16px;
+}
+
+
+
+.button-refresh:hover {
+    background-color: var(--color-button-refresh-hover);
+}
+
+.button-refresh:disabled {
+    background-color: var(--color-button-disable);
+    color: var(--color-text);
+    cursor: not-allowed;
 }
